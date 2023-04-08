@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: "Arial Black", sans-serif;
+  color: #fff;
+}
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background: #03021f;
+  background-image: url("../imgs/427161.jpg");
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10% 0 10%;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.1em;
+  font-family: "Teko", sans-serif;
+}
+
+header h1:hover {
+  color: #6bdcff;
+  text-shadow: 0 0 40px white;
+}
+
+
+.navbar a {
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: #6bdcff;
+}
+
+.navbar a:hover {
+  text-shadow: 0 0 40px white;
+}
+
+.hero {
+  padding: 50px 0 100px 0;
+  height: auto;
+}
+.hero h2 {
+  font-size: 2em;
+}
+.hero p {
+  font-size: 1.5em;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px 50px;
+  align-items: center;
+}
+.flex-center {
+  width: 100%;
+  margin: auto;
+}
+.hero .hero-text,
+.hero .left-img {
+  max-width: 450px;
+  margin: auto;
+}
+.hero img {
+  max-width: 282px;
+  border-radius: 50px;
+  border: 2px solid #152441;
+}
+.footer {
+  width: calc(100% - 40px);
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 40px 0 40px;
+}
+
+/* .footer-menu,
+.footer-bottom {
+} */
+.footer-menu ul {
+  padding: 0;
+  display: flex;
+  gap: 30px;
+
+}
+.footer-menu ul li {
+  list-style-type: none;
+}
+.footer-menu ul li:hover {
+  color: #6bdcff;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer a:hover,
+.footer .active {
+  color: #6bdcff;
+}
+
+
+
+@media (max-width: 425px) {
+  .container {
+    width: 410px;
+  }
+  .footer {
+    padding: 0;
+  }
+  .navbar a {
+    display: block;
+  }
+}
+@media (max-width: 540px) {
+  .navbar a {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
